@@ -1,0 +1,31 @@
+﻿<Window x:Class="TestWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestWPF"
+        mc:Ignorable="d"
+        Title="Finestra" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" x:Name="tbxTesto" Text="Ciao!" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="btmHello" Content="Bella giornata" Margin="2" Click="btmHello_Click"/>
+        <Button Grid.Row="3" Grid.Column="3" x:Name="btmBadday" Content="Brutta giornata" Margin="2" Click="btmBadday_Click"/>
+        <Button Grid.Row="3" Grid.Column="5" x:Name="btmClear" Content="Cancella" Margin="2" Click="btmClear_Click"/>
+    </Grid>
+</Window>

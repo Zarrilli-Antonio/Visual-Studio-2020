@@ -1,0 +1,69 @@
+﻿<Window x:Class="zarrilli.antonio._4g.Alloggio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zarrilli.antonio._4g.Alloggio"
+        mc:Ignorable="d"
+        
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Alloggio" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Codice:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="7"></TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="2" Margin="2" x:Name="tbxCodiceAlloggio"></TextBox>
+        <TextBlock Grid.Row="2" Grid.Column="3" Text="Numero persone:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="7"></TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="4" Margin="2" x:Name="tbxPersoneAlloggio"></TextBox>
+        <TextBlock Grid.Row="2" Grid.Column="5" Text="Metri quadri:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="7"></TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="6" Margin="2" x:Name="tbxMetriAlloggio"></TextBox>
+        <TextBlock Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" x:Name="lblDatiAlloggio"></TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="5" x:Name="lblAcquaAlloggio"></TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="5" x:Name="lblDensitaAlloggio"></TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="5" x:Name="lblValoreAlloggio"></TextBlock>
+        <Button Grid.Row="6" Grid.Column="8" Content="Alloggio" FontSize="7" Click="Button_Click"></Button>
+        <TextBlock Grid.Row="9" Grid.Column="1" Text="Villa" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Row="10" Grid.Column="1" Text="Codice:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="7"></TextBlock>
+        <TextBox Grid.Row="10" Grid.Column="2" Margin="2" x:Name="tbxCodiceVilla"></TextBox>
+        <TextBlock Grid.Row="10" Grid.Column="3" Text="Numero persone:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="7"></TextBlock>
+        <TextBox Grid.Row="10" Grid.Column="4" Margin="2" x:Name="tbxPersoneVilla"></TextBox>
+        <TextBlock Grid.Row="10" Grid.Column="5" Text="Metri quadri:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="7"></TextBlock>
+        <TextBox Grid.Row="10" Grid.Column="6" Margin="2" x:Name="tbxMetriVilla"></TextBox>
+        <TextBlock Grid.Row="10" Grid.Column="7" Text="Metri quadri giardino:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="7"></TextBlock>
+        <TextBox Grid.Row="10" Grid.Column="8" Margin="2" x:Name="tbxMetriGiardinoVilla"></TextBox>
+        <TextBlock Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="5" x:Name="lblDatiVilla"></TextBlock>
+        <TextBlock Grid.Row="13" Grid.Column="1" Grid.ColumnSpan="5" x:Name="lblAcquaVilla"></TextBlock>
+        <TextBlock Grid.Row="14" Grid.Column="1" Grid.ColumnSpan="5" x:Name="lblDensitaVilla"></TextBlock>
+        <TextBlock Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="5" x:Name="lblValoreVilla"></TextBlock>
+        <Button Grid.Row="14" Grid.Column="8" Content="Villa" FontSize="7" Click="Button_Click_1"></Button>
+    </Grid> 
+</Window>

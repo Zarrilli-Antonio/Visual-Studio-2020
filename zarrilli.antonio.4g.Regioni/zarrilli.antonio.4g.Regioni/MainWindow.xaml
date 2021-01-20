@@ -1,0 +1,59 @@
+﻿<Window x:Class="zarrilli.antonio._4g.Regioni.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zarrilli.antonio._4g.Regioni"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="3" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Content="Capoluogho"></Label>
+        <TextBlock Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" TextAlignment="Center" x:Name="Capoluoghi"></TextBlock>
+        <Label Grid.Row="3" Grid.Column="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Content="Provincie"></Label>
+        <TextBlock Grid.Row="4" Grid.Column="5" Grid.ColumnSpan="3" x:Name="Provincie" TextAlignment="Center" TextWrapping="WrapWithOverflow"></TextBlock>
+        <ComboBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" x:Name="Regione">
+            <ComboBoxItem>Abruzzo</ComboBoxItem>
+            <ComboBoxItem>Basilicata</ComboBoxItem>
+            <ComboBoxItem>Calabria</ComboBoxItem>
+            <ComboBoxItem>Campania</ComboBoxItem>
+            <ComboBoxItem>Emilia Romagna</ComboBoxItem>
+            <ComboBoxItem>Friuli Venezia Giulia</ComboBoxItem>
+            <ComboBoxItem>Lazio</ComboBoxItem>
+            <ComboBoxItem>Liguria</ComboBoxItem>
+            <ComboBoxItem>Lombardia</ComboBoxItem>
+            <ComboBoxItem>Marche</ComboBoxItem>
+            <ComboBoxItem>Molise</ComboBoxItem>
+            <ComboBoxItem>Piemonte</ComboBoxItem>
+            <ComboBoxItem>Puglia</ComboBoxItem>
+            <ComboBoxItem>Sardegna</ComboBoxItem>
+            <ComboBoxItem>Sicilia</ComboBoxItem>
+            <ComboBoxItem>Toscana</ComboBoxItem>
+            <ComboBoxItem>Trentino Alto Adige</ComboBoxItem>
+            <ComboBoxItem>Umbria</ComboBoxItem>
+            <ComboBoxItem>Valle D'Aosta</ComboBoxItem>
+            <ComboBoxItem>Veneto</ComboBoxItem>
+        </ComboBox>
+        <Button Grid.Row="6" Grid.Column="4" Content="Conferma" Click="Button_Click"></Button>
+    </Grid>
+</Window>

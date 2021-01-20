@@ -1,0 +1,35 @@
+﻿<Window x:Class="Zarrilli.Antonio.Falsaperla.Andrea._4g.Pronto_soccorso.Aggiungi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zarrilli.Antonio.Falsaperla.Andrea._4g.Pronto_soccorso"
+        mc:Ignorable="d"
+        Title="Aggiungi Paziente" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="Inserisci il nome" TextAlignment="Center" VerticalContentAlignment="Center" Margin="10" x:Name="TxbNome"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="3" Text="Inserisci il cognome" TextAlignment="Center" VerticalContentAlignment="Center" Margin="10" x:Name="TxbCognome"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="2" Text="Inserisci il codice fiscale" TextAlignment="Center" VerticalContentAlignment="Center" Margin="10" x:Name="TxbFiscale"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="Inserisci l'orario d'arrivo" TextAlignment="Center"  VerticalContentAlignment="Center" Margin="10" x:Name="TxbOrario"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="3" Text="Inserisci la gravità" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" x:Name="TxbCodice"></TextBox>
+        <Button Grid.Row="5" Grid.Column="1" Content="Cancella" Margin="10" x:Name="BtnElimina" Click="Elimina_Click" ></Button>
+        <Button Grid.Row="5" Grid.Column="3" Content="Aggiungi" Margin="10" x:Name="BtnAggiungi" Click="Aggiungi_Click"></Button>
+    </Grid>
+</Window>

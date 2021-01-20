@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9505F6CD-B55D-4716-BECB-0631698F15A1}</ProjectGuid>
+    <ProjectGuid>{090623AB-BFA0-4FDE-8864-4F67AB893222}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>antonio.zarrilli.zoo</RootNamespace>
-    <AssemblyName>antonio.zarrilli.zoo</AssemblyName>
+    <RootNamespace>antonio.zarrilli.scuola</RootNamespace>
+    <AssemblyName>antonio.zarrilli.scuola</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Zoo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

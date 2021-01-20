@@ -1,0 +1,9 @@
+﻿<Application x:Class="Zarrilli.Antonio.Falsaperla.Andrea._4g.Pronto_soccorso.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Zarrilli.Antonio.Falsaperla.Andrea._4g.Pronto_soccorso"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

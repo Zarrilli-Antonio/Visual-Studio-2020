@@ -37,7 +37,6 @@ namespace Zarrilli.Antonio.Falsaperla.Andrea._4g.Pronto_soccorso
             aggiungi.ShowDialog();
             Paziente paziente = new Paziente(nome, cognome, codiceFiscale, Convert.ToInt32(gravita), orario);
             Pazienti.Add(paziente);
-            //Pazienti.Sort();
         }
 
         private void Rimuovi_Click(object sender, RoutedEventArgs e)
@@ -45,16 +44,22 @@ namespace Zarrilli.Antonio.Falsaperla.Andrea._4g.Pronto_soccorso
             Rimuovi rimuovi = new Rimuovi(this);
             rimuovi.Owner = this;
             rimuovi.ShowDialog();
-            //ci stiamo lavorando
-            //var controllo = new EmployeeSearch(codiceEliminazione);
-            //int index = Pazienti.FindIndex(controllo);
-            //Pazienti.Remove(index);
+            int i = 0;
+            foreach(var paziente in Pazienti)
+            {
+                if (paziente.codice == codiceEliminazione)
+                {
+                    Pazienti.RemoveAt(i);
+                    return;
+                }
+                i++;
+            }
         }
 
         private void Aggiorna_Click(object sender, RoutedEventArgs e)
         {
             DGPazienti.ItemsSource = Pazienti;
-            LblUtilizzi.Content = "Utilizzi: 0 di 1";
+            DGPazienti.Items.Refresh();
         }
     }
 }
